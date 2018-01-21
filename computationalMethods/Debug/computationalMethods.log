@@ -1,0 +1,5 @@
+﻿  main.cpp
+d:\utilisateurs\victor\document\cranfield\cpp\computationalmethods\computationalmethods\main.cpp(37): warning C4018: '<' : incompatibilité signed/unsigned
+d:\utilisateurs\victor\document\cranfield\cpp\computationalmethods\computationalmethods\main.cpp(40): warning C4018: '<' : incompatibilité signed/unsigned
+  computationalMethods.vcxproj -> D:\Utilisateurs\Victor\Document\Cranfield\CPP\computationalMethods\Debug\computationalMethods.exe
+  computationalMethods.vcxproj -> D:\Utilisateurs\Victor\Document\Cranfield\CPP\computationalMethods\Debug\computationalMethods.pdb (Partial PDB)
