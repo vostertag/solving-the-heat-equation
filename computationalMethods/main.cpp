@@ -6,7 +6,7 @@
 #include"FTCS.h"
 #include"AnalyticalSolution.h"
 #include"CrankNicholson.h"
-#include"printer.h"
+#include"Printer.h"
 #include<vector>
 #include<iostream>
 
@@ -35,7 +35,7 @@ int main() {
 
 	// going over each scheme and creating its .dat files and gnuplot commands
 	for (int i = 0; i<methods.size(); i++){
-		methods[i]->solve(); 
+		methods[i]->solve();
 		printer.setPdeSolver(methods[i]);
 		for (int j = 0; j < timesteps.size(); j++) {
 			printer.createDatFileForT(timesteps[j]);

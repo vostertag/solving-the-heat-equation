@@ -1,5 +1,6 @@
-#include<vector>	
+#include<vector>
 #include"Parameters.h"
+#include<string>
 
 
 using namespace std;
@@ -17,7 +18,7 @@ using namespace std;
 */
 class PDESolver {
 	protected:
-		// CLASS MEMBERS 
+		// CLASS MEMBERS
 		Parameters parameters;					///< Structure Parameters, with all of the problem's parameters, to make it easier on the user to write when he uses the  same parameters again and again
 		vector< vector<double> > fTable;		///< Vector of vectors that contains all the solutions f : fTable[1][10] is the temperature at the 1st time point of the 10th space point
 	public:
@@ -31,7 +32,7 @@ class PDESolver {
 		* can get it using the other parameters.
 		*
 		* This function also throws exceptions if the user's value can not be used
-		* 
+		*
 		* @param D the diffusivity (in ft^2/hr)
 		* @param deltaT (in hrs)
 		* @param deltaX (in ft)
@@ -47,7 +48,7 @@ class PDESolver {
 		/**
 		* Function that checks if we are at an edge of the wall.
 		*
-		* If it's the case, it will also put the right value for that space point at that time step in fTable 
+		* If it's the case, it will also put the right value for that space point at that time step in fTable
 		* (which is the boundary condition, that is to say tSur)
 		*
 		* @param i space point that needs to be checked
@@ -59,7 +60,7 @@ class PDESolver {
 		/**
 		* Pure virtual function that solves all the points that we desire and put their value in fTable
 		*
-		* Every type of scheme (implicit and explicit) will solve our equation, but they have different 
+		* Every type of scheme (implicit and explicit) will solve our equation, but they have different
 		* ways to do it, as we will see. Therefore, this is a pure virtual class.
 		*/
 		void virtual solve()=0;
@@ -68,7 +69,7 @@ class PDESolver {
 		* Function that creates a vector with the L2 norm for each time step in comparison of an other PDESolver
 		*
 		* Mostly used with the analytic solution, to get the errors of the scheme
-		* 
+		*
 		* @param pdeSolver to do the L2 norm with
 		* @return vector with the values of the norm for each time step of our scheme
 		*/
@@ -83,7 +84,7 @@ class PDESolver {
 
 		/**
 		* Getter for Parameters
-		* 
+		*
 		* @return Parameters
 		*/
 		Parameters getParameters();

@@ -1,6 +1,10 @@
 #include"PDESolver.h"
 #include<iostream>
 #include <math.h>
+#include<string>
+#include<typeinfo>
+
+using namespace std;
 
 // CONSTRUCTOR
 // initialisation de fTable et des paramètres
