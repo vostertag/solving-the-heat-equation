@@ -4,8 +4,7 @@ C++ program that solves the heat equation using various numerical schemes for th
 
 ## Index
 [1. Problem Definition](#problem-definition)  
-[2. How to use the program](#how-to-use-the-program)  
-[3. What does it do](#what-does-it-do)  
+[2. What does it do](#what-does-it-do)  
 
 ## Problem Definition
 
@@ -15,10 +14,6 @@ A wall 1 ft.  thick and infinite in other directions (see Figure 1) has an initi
 How will the temperature increase inside the wall?
 
 It was required that the code works with Visual Studio, using no external libraries.
-
-## How to use the program
-
-Load the solution inside an IDE that supports .sln files and then simply build and run it.
 
 ## What does it do
 
