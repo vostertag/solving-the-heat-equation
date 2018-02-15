@@ -1,6 +1,6 @@
 # Solving the heat equation
 
-Full report on that program can be found ![here](https://victorostertag.fr/files/Computation_Methods_And_CPP_Assignment_Victor_OSTERTAG.pdf)
+Full report on that program can be found [here](https://victorostertag.fr/files/Computation_Methods_And_CPP_Assignment_Victor_OSTERTAG.pdf)
 
 C++ program that solves the heat equation using various numerical schemes for the problem introduced in the [Problem Definition](#problem-definition) section.
 
